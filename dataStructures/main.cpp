@@ -6,11 +6,7 @@
 //  Copyright © 2017 Mitchell Roy. All rights reserved.
 //
 
-#include <iostream>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include "queue.h"
 
 using namespace std;
 
@@ -19,6 +15,12 @@ int main() {
     
     cout << "hello world" << endl;
     
+    Queueobj *q = new Queueobj();
+    
+    q->set_int_queue();
+    q->print_num_queue();
+    
+    delete q;
+    
     return 0;
 }
-
